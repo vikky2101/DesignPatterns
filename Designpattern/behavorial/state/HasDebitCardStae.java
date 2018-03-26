@@ -10,7 +10,7 @@ public class HasDebitCardStae implements AtmMachineState {
 
 	@Override
 	public void ejectDebitCard() {
-		System.out.println("Debit Card ejected");
+		System.out.println("Debit Card has been ejected");
 		
 	}
 

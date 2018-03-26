@@ -7,7 +7,5 @@ public class main {
 		AbstractFactory abstractFactory = FactoryProducer.getFactory("Shape");
 		Shape shape = abstractFactory.getShape("Circle");
 		shape.draw();
-
 	}
-
 }
