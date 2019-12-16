@@ -9,6 +9,6 @@
       <sourceFolder url="file://$MODULE_DIR$/behavorial" isTestSource="false" />
     </content>
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="inheritedJdk" />
+    <orderEntry type="jdk" jdkName="JavaSE-1.8" jdkType="JavaSDK" />
   </component>
 </module>
