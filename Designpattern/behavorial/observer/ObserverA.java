@@ -1,19 +1,18 @@
 package observer;
 
-public class ObserverA extends Observer {
+public class ObserverA implements Observer {
 
-	private Subject subject;
+  private Subject subject;
 
-	public ObserverA(Subject sub) {
-		this.subject = sub;
-		this.subject.attach(this);
-	}
+  public ObserverA(Subject sub) {
+    this.subject = sub;
+    this.subject.register(this);
+  }
 
-	@Override
-	public void update() {
-		// TODO Auto-generated method stub
-		System.out.println("Observer A updated");
-
-	}
+  @Override
+  public void update() {
+    // TODO Auto-generated method stub
+    System.out.println("Observer A updated");
+  }
 
 }

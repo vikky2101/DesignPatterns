@@ -2,8 +2,8 @@ package mediator;
 
 public abstract class IUser {
 
-	protected IChat chat = null;
-	protected String name = null;
+	IChat chat ;
+	String name ;
 
 	public IUser(IChat chat, String name) {
 		this.chat = chat;

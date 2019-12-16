@@ -3,8 +3,8 @@ package mediator;
 
 public interface IChat {
 
-	public void addMember(IUser member);
+  void addMember(IUser member);
 
-	public void send(String msg, IUser user);
+  void send(String msg, IUser user);
 
 }

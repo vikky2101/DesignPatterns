@@ -1,11 +1,11 @@
 package abstractFactory;
 
-public class Square implements Shape{
+public class Square implements Shape {
 
-	@Override
-	public void draw() {
-		System.out.println("Square Shape");
-		
-	}
+  @Override
+  public void draw() {
+    System.out.println("Square Shape");
+
+  }
 
 }

@@ -15,7 +15,7 @@ public class NoDebitCardState implements AtmMachineState{
 	}
 
 	@Override
-	public void enterPinandWithdrwawMoney() {
+	public void enterPinAndWithDrawMoney() {
 		System.out.println("No Debit Card inserted, so can not withdraw money ");
 		
 	}

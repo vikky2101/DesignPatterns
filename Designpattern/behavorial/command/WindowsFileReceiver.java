@@ -1,17 +1,17 @@
 package command;
 
-public class WindowsFileReceiver  implements IReceiver{
+public class WindowsFileReceiver implements IReceiver {
 
-	@Override
-	public void openFile() {
-		System.out.println("Windows open file");
-		
-	}
+  @Override
+  public void openFile() {
+    System.out.println("Windows open file");
 
-	@Override
-	public void closeFile() {
-		System.out.println("Windows close file");
-		
-	}
+  }
+
+  @Override
+  public void closeFile() {
+    System.out.println("Windows close file");
+
+  }
 
 }

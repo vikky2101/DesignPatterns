@@ -2,8 +2,10 @@ package visitor;
 
 public interface IVisitor {
 
-	public double visit(Liquor liqorItem);
-	public double visit(Car carItem);
-	public double visit(Food foodItem);
-	
+  double visit(Liquor liquorItem);
+
+  double visit(Car carItem);
+
+  double visit(Food foodItem);
+
 }

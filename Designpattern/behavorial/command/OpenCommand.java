@@ -1,16 +1,16 @@
 package command;
 
-public class OpenCommand  implements ICommand{
+public class OpenCommand implements ICommand {
 
-	private IReceiver receiver;
-	
-	public OpenCommand(IReceiver receiver){
-		this.receiver = receiver;
-	}
-	
-	@Override
-	public void execute() {
-		this.receiver.openFile();	
-	}
+  private IReceiver receiver;
+
+  public OpenCommand(IReceiver receiver) {
+    this.receiver = receiver;
+  }
+
+  @Override
+  public void execute() {
+    this.receiver.openFile();
+  }
 
 }

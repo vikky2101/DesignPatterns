@@ -1,35 +1,36 @@
 package state;
 
-public class AtmMachine implements AtmMachineState{
-	private AtmMachineState atmState;
+public class AtmMachine implements AtmMachineState {
 
-	public AtmMachine() {
-		atmState = new NoDebitCardState();
-	}
+  private AtmMachineState atmState;
 
-	private void setState(AtmMachineState state) {
-		this.atmState = state;
-	}
+  public AtmMachine() {
+    atmState = new NoDebitCardState();
+  }
 
-	@Override
-	public void insertDebitCard() {
-		atmState.insertDebitCard();
-		this.setState(new HasDebitCardStae());
-		
-		
-	}
+  private void setState(AtmMachineState state) {
+    this.atmState = state;
+  }
 
-	@Override
-	public void ejectDebitCard() {
-		this.atmState.ejectDebitCard();
-		this.setState(new NoDebitCardState());
-		
-	}
+  @Override
+  public void insertDebitCard() {
+    atmState.insertDebitCard();
+    this.setState(new HasDebitCardState());
 
-	@Override
-	public void enterPinandWithdrwawMoney() {
-		this.atmState.enterPinandWithdrwawMoney();
-		
-	}
+
+  }
+
+  @Override
+  public void ejectDebitCard() {
+    this.atmState.ejectDebitCard();
+    this.setState(new NoDebitCardState());
+
+  }
+
+  @Override
+  public void enterPinAndWithDrawMoney() {
+    this.atmState.enterPinAndWithDrawMoney();
+
+  }
 
 }

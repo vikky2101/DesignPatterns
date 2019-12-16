@@ -1,5 +1,6 @@
 package abstractFactory;
 
 public interface Color {
-	void fill();
+
+  void fill();
 }

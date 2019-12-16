@@ -2,8 +2,10 @@ package state;
 
 public interface AtmMachineState {
 
-	public void insertDebitCard();
-	public void ejectDebitCard();
-	public void enterPinandWithdrwawMoney();
-	
+  void insertDebitCard();
+
+  void ejectDebitCard();
+
+  void enterPinAndWithDrawMoney();
+
 }
